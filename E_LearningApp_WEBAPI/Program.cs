@@ -21,6 +21,8 @@ options.UseSqlServer(builder.Configuration.GetConnectionString("ELConnectionStri
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ILoginService, LoginService>();
+builder.Services.AddScoped<ILoginRepository, LoginRepository>();
 
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
