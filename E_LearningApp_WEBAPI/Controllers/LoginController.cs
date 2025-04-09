@@ -19,10 +19,8 @@ namespace E_LearningApp_WEBAPI.Controllers
         private readonly ILoginService _loginService;
         
 
-        public LoginController(ELearningProjectDbContext context, ITokenService tokenService, ILoginService loginService)
+        public LoginController(ILoginService loginService)
         {
-            _contextObj = context;
-            _tokenService = tokenService;
             _loginService = loginService;
         }
         // GET: api/<LoginController>
