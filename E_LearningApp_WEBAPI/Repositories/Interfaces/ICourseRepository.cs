@@ -4,9 +4,9 @@ namespace E_LearningApp_WEBAPI.Repositories.Interfaces
 {
     public interface ICourseRepository
     {
-        //Task<Course> GetApprovedCourses();
-        //Task<Course> GetCourseWithSearchTerm(string term);
+        Task<(List<Course>, int)>  GetApprovedCourses(int pageNumber, int pageSize, string? search, string sortBy, bool isDescending);
+ 
 
-
+  
     }
 }

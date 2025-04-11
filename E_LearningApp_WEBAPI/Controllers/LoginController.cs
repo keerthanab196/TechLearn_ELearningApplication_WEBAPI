@@ -43,9 +43,6 @@ namespace E_LearningApp_WEBAPI.Controllers
         }
         
         
-
-       
-
         // POST api/<LoginController>
         [Route("changePassword")]
         [HttpPut]
